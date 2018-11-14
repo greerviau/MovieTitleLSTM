@@ -1,2 +1,5 @@
 # BeeMovieLSTM
-Using an LSTM to create lines trained off of the Bee Movie
+## Dependancies
+* pickle
+* tflearn
+* tensorflow (gpu)
