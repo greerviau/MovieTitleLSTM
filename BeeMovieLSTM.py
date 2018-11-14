@@ -1,4 +1,4 @@
-import os, pickle, tflearn, urllib, string
+import os, pickle, tflearn, urllib
 from tflearn.data_utils import *
 
 url = "https://gist.githubusercontent.com/The5heepDev/a15539b297a7862af4f12ce07fee6bb7/raw/7164813a9b8d0a3b2dcffd5b80005f1967887475/entire_bee_movie_script"
@@ -47,9 +47,9 @@ for i in range(max_epochs):
     m.fit(X, Y, validation_set=0.1, batch_size=batch_size, snapshot_epoch=False, show_metric=True, n_epoch=1, run_id='bee_movie')
     print("-- Testing --")
     print("-- Testing with temp of 1.0 --")
-    print(m.generate(60, temperature=1.0, seq_seed=seed))
+    print(m.generate(maxlen*2, temperature=1.0, seq_seed=seed))
     print("-- Testing with temp of 0.5 --")
-    print(m.generate(60, temperature=0.5, seq_seed=seed))
+    print(m.generate(maxlen*2, temperature=0.5, seq_seed=seed))
 
 #final output
 print("-- Final Script --")
