@@ -1,5 +1,5 @@
 # BeeMovieLSTM
-## Dependancies
+## Dependencies
 * pickle
 * tflearn
 * tensorflow (gpu)
