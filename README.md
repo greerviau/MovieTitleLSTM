@@ -1,4 +1,4 @@
-# BeeMovieLSTM
+# MovieTitleLSTM
 ## Dependencies
 * pickle
 * tflearn
