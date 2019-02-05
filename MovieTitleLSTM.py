@@ -1,4 +1,4 @@
-import os, pickle, tflearn, urllib
+import os, pickle, tflearn
 from tflearn.data_utils import *
 
 path = "movie_titles.txt"
